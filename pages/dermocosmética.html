@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>farmacia</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>farmacia</title>
+    </head>
 
 <body>
     <header>
@@ -18,12 +19,11 @@
                 <input type="search" id="buscador" placeholder="¿Qué estás buscando?">
             </form>
             <div class="account-cart-container">
-                <p>Mi cuenta</p>
-                <p>Mi carrito</p>
+                <p><i class="bi bi-person-circle"></i>Mi cuenta</p>
+                <p><i class="bi bi-cart"></i>Mi carrito</p>
             </div>
-        </div>
     </header>
-    
+
     <nav>
         <ul class="horizontal-menu">
             <li><a href="../index.html">Inicio</a></li>
@@ -34,13 +34,45 @@
         </ul>
     </nav>
 
-    <main class="contenedor-uno">
-        <img src="../assets/img/factorsolar.png">
-        <p class="parrafo-uno">DECODIFICAR LA PROTECCIÓN SOLAR</p>
+    <main>
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/img/slideruno.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/sliderdos.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/slidertres.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    <article class="contenedor-article">
+        <p class="parrafo-uno">PROTECCIÓN SOLAR</p>
         <p class="parrafo-dos">¿Por qué es importante?</p>
+        <p>El sol es beneficioso en pequeñas dosis para el estado de ánimo y los niveles de vitamina D. Pero una intensa exposición causa efectos dañinos a corto y largo plazo. A corto plazo, la exposición a los rayos UV puede causar: Quemaduras de sol Alergia al sol Trastornos de la pigmentación Acné Fotosensibilidad Fotoinmunosupresión.</p>
+        <p>Para evitar los daños a corto y largo plazo de la exposición a los rayos UV, utiliza diariamente un protector solar UVA-UVB y adopta conductas inteligentes con respecto al sol, como buscar sombra cuando el sol es más fuerte y usar un sombrero, gafas de sol y ropa protectora. Usa [SAVE YOUR SKIN LANDING PAGE] para aprender a revisar tus lunares y los de tus seres queridos con regularidad, porque la detección temprana es la clave para el tratamiento exitoso del melanoma.</p>
+    </article>
+    <aside class="iframe-contenedor">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LwZmTiiv7Lg?si=gLK6wTxaR0I-ekrK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </aside>
+    
+    
     </main>
-    
-    
+
+
+
+
     <hr>
 
     <footer>
@@ -65,6 +97,12 @@
             <img src="../assets/img/fbig.png">
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -14,9 +14,6 @@ body {
     padding: 20px 10px;
     text-align: center;
     font-size: 25px;
-    margin-top: -10px; 
-    margin-left: -10px; 
-    margin-right: -10px;
     font-weight:normal;
 }
 
@@ -284,16 +281,6 @@ article p:last-child {
 
 
 
-
-
-
-
-
-
-
-
-
-
 footer {
     display: flex; /* Utiliza flexbox */
     justify-content: space-around; /* Alinea los elementos con espacio alrededor */
@@ -312,12 +299,41 @@ footer div {
 
 /*media queries*/
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header img{
+        width: 400%;
+    }
+    
+    .horizontal-menu li a {
+        font-size: medium;
+    }
 
 
 
 
 
 
+@media screen and (max-width: 320px) {
+    header{
+        flex-direction: column;
+    }
+    .header-texto{
+    font-size: 16px;
+    }
 
-@media screen and (max-width: 576px){}
+    .horizontal-menu{
+        justify-content: flex-end;
+    }
+    .horizontal-menu li a {
+        font-size: 8px;
+        font-weight: 700;
+        
+}
+
+
+
+
