@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.header-texto {
+    background-color: #00A339;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: -10px; 
+    margin-left: -10px; 
+    margin-right: -10px;
+    font-weight:normal;
+}
+
+
+
+
+
+
+/* Estilos para el input de búsqueda */
+#buscador {
+    padding: 10px; /* Espacio de relleno */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #efebeb; /* Color de fondo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    outline: none; /* Eliminar el borde de enfoque */
+    width: 300px; /* Ancho del buscador */
+    font-size: 16px; /* Tamaño de fuente */
+    font-family: Arial, sans-serif; /* Familia de fuente */
+}
+
+/* Estilos para el texto de marcador de posición dentro del buscador */
+#buscador::placeholder {
+    color: #888; /* Color del texto de marcador de posición */
+}
+
+/* Estilos adicionales cuando el buscador está enfocado */
+#buscador:focus {
+    background-color: #FFF; /* Cambiar color de fondo al enfocar */
+}
+
+
+/*buscador*/
+
+.form-container {
+    display: flex;
+    align-items:center;
+    margin-left: auto;
+}
+
+.form-container form {
+    margin-bottom:inherit;/* Mueve el formulario hacia el margen derecho */
+}
+
+
+.account-cart-container {
+    display: flex;
+    align-items: flex-end; /* Alinea verticalmente los elementos */
+    margin-left: auto;
+    padding: 40px;/* Mueve el contenedor hacia el margen derecho */
+}
+
+
+    
+.account-cart-container p {
+    margin-left: 100px; /* Ajusta el margen entre los elementos */
+}
+
+.horizontal-menu {
+    display: flex;
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    background-color: #E1F0DA;
+    justify-content: space-evenly;
+}
+
+.horizontal-menu li {
+    margin-right: 20px; 
+
+}
+
+.horizontal-menu a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; 
+    font-weight:normal;
+    font-size: x-large;
+}
+
+main {
+    display: flex; /* Para utilizar el modelo de caja flexible */
+    flex-wrap: wrap; /* Para permitir que las tarjetas se envuelvan si no caben en una línea */
+    justify-content: center; /* Para alinear las tarjetas horizontalmente en el centro */
+}
+
+.image-container img {
+    max-width: none; /* Permite que la imagen exceda el ancho máximo */
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    border-radius: 10px; /* Añade bordes redondeados a la imagen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una suave sombra a la imagen */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+
+/* Estilos para las tarjetas */
+.card-inicio {
+    width: 300px; /* Ancho fijo para cada tarjeta */
+    margin: 10px; /* Margen entre las tarjetas */
+    text-align: center; 
+    border: 1px solid #ccc; /* Añadir borde a las tarjetas */
+    border-radius: 5px; /* Añadir esquinas redondeadas */
+    overflow: hidden; /* Evitar que las imágenes se desborden */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.card-inicio img {
+    width: 75%; /* Hace que las imágenes ocupen el ancho completo de la tarjeta */
+    height: auto;
+}
+
+
+card-content {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    margin: 10px; /* Espacio entre las tarjetas */
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc; /* Añadir borde a las tarjetas */
+    border-radius: 5px; /* Añadir esquinas redondeadas */
+    overflow: hidden; /* Evitar que las imágenes se desborden */
+}
+
+.card img {
+    width: 75%; /* Hace que las imágenes ocupen el ancho completo de la tarjeta */
+    height: auto;
+}
+    
+
+.card-content {
+    padding: 10px;
+     /* Añadir un relleno interior */
+}
+
+.card-content h2 {
+    font-size: 1.2rem; /* Tamaño de fuente para el título */
+    margin: 0; 
+    text-align: center;
+}
+
+
+
+.card-content p {
+    font-size: 1rem; /* Tamaño de fuente para el precio */
+    margin: 0;
+    text-align: center; /* Eliminar el margen superior e inferior */
+}
+
+/*dermocosmética*/ 
+
+.imagedermo-container img {
+    width: 100vw; /* Ancho de la imagen al 100% del ancho de la ventana gráfica */
+    height: auto; /* Altura proporcional para mantener la relación de aspecto original */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+}
+
+/* cuidado de la piel */
+section {
+    display: flex; /* Utiliza flexbox para alinear los artículos en línea */
+    justify-content: space-around; /* Distribuye los artículos equitativamente */
+    margin-top: 20px; /* Espacio superior */
+}
+
+article {
+    width: 30%; /* Ancho de cada artículo */
+    padding: 20px; /* Relleno interno */
+    background-color:#F6F5F8 ; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: flex; /* Utiliza flexbox para el diseño interno */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+article img {
+    max-width: 100%; /* Ancho máximo del 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+article h2 {
+    font-weight: bold; /* Hace el título en negrita */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+article p {
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+article p:last-child {
+    margin-bottom: 0; /* Elimina el espacio inferior para el último párrafo */
+}
+
+
+
+
+.parrafo-uno {
+    position:;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 44px;
+    color: #1d1d1d;
+
+
+}
+
+.parrafo-dos {
+    font-weight: 100;
+    font-size: 54px;
+    line-height: 44px;
+}
+
+
+
+
+
+
+.contenedor-main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.contenedor-main article {
+    width: 30%;
+    padding: 20px;
+    background-color:#F6F5F8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-main article img {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contenedor-main article h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex; /* Utiliza flexbox */
+    justify-content: space-around; /* Alinea los elementos con espacio alrededor */
+    background-color: #f0f0f0; /* Color de fondo del footer */
+    padding: 20px 0; /* Añade relleno en la parte superior e inferior del footer */
+}
+
+footer div {
+    flex: 1; /* Distribuye el espacio disponible entre los elementos */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+
+
+
+
+/*media queries*/
+
+@media screen and (max-width: 768px) {}
+
+
+
+
+
+
+
+@media screen and (max-width: 576px){}
