@@ -200,8 +200,22 @@ article p:last-child {
     margin-bottom: 0; 
 }
 
+/*dermocosmetica*/
 
+.contenedor-article {
+    margin-top: 10px;
+    width: 30%;
+    padding: 20px;
+    background-color: #F6F5F8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-bottom: 20px;
+}
 
+.iframe-contenedor{
+    margin-top: 10px;
+}
 
 .parrafo-uno {
     font-weight: 700;
@@ -276,7 +290,6 @@ footer div {
 
 @media screen and (max-width: 768px){
     header{
-        display: flex;
         flex-direction: column;
     }
     header img {
@@ -300,16 +313,46 @@ footer div {
 
 
 @media screen and (max-width: 320px) {
-    .header-texto{
-    font-size: xx-small;
-    padding: 1px;
+    header{
+        flex-direction: column;
+    }
+    header img {
+        width: 93%;
     }
 
-    .horizontal-menu{
-        font-size: xx-small;
-    }   
-
+    .header-texto{
+        font-size: .75rem;
+    }
+    
+    .form-container {
+        display: flex;
+        margin-left: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .horizontal-menu li a {
+        font-size: 6px;
+        font-weight: bold;
+    }
+    .image-container img {
+        width: 83%;
+    }
+    .horizontal-menu {
+        width: 372px;
+    }    
+        
+    .account-cart-container {
+            display: block;
+            align-items: center;
+            margin-left: -124px;
+            padding: 40px;
 }
+
+footer {
+    display: block;
+}
+}
+
 
 
 
