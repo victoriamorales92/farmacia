@@ -11,42 +11,13 @@ body {
 .header-texto {
     background-color: #00A339;
     color: white;
-    padding: 20px 10px;
+    padding: 4px 10px;
     text-align: center;
     font-size: 25px;
     font-weight:normal;
 }
 
 
-
-
-
-
-/* Estilos para el input de búsqueda */
-#buscador {
-    padding: 10px; /* Espacio de relleno */
-    border: none; /* Sin borde */
-    border-radius: 20px; /* Bordes redondeados */
-    background-color: #efebeb; /* Color de fondo */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    outline: none; /* Eliminar el borde de enfoque */
-    width: 300px; /* Ancho del buscador */
-    font-size: 16px; /* Tamaño de fuente */
-    font-family: Arial, sans-serif; /* Familia de fuente */
-}
-
-/* Estilos para el texto de marcador de posición dentro del buscador */
-#buscador::placeholder {
-    color: #888; /* Color del texto de marcador de posición */
-}
-
-/* Estilos adicionales cuando el buscador está enfocado */
-#buscador:focus {
-    background-color: #FFF; /* Cambiar color de fondo al enfocar */
-}
-
-
-/*buscador*/
 
 .form-container {
     display: flex;
@@ -55,26 +26,26 @@ body {
 }
 
 .form-container form {
-    margin-bottom:inherit;/* Mueve el formulario hacia el margen derecho */
+    margin-bottom:inherit;
 }
 
 
 .account-cart-container {
     display: flex;
-    align-items: flex-end; /* Alinea verticalmente los elementos */
+    align-items: flex-end; 
     margin-left: auto;
-    padding: 40px;/* Mueve el contenedor hacia el margen derecho */
+    padding: 40px;
 }
 
 
     
 .account-cart-container p {
-    margin-left: 100px; /* Ajusta el margen entre los elementos */
+    margin-left: 100px; 
 }
 
 .horizontal-menu {
     display: flex;
-    list-style-type: none; /* Elimina los puntos de la lista */
+    list-style-type: none; 
     padding: 0;
     background-color: #E1F0DA;
     justify-content: space-evenly;
@@ -86,47 +57,48 @@ body {
 }
 
 .horizontal-menu a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    text-decoration: none; 
     color: black; 
     font-weight:normal;
     font-size: x-large;
 }
 
 main {
-    display: flex; /* Para utilizar el modelo de caja flexible */
-    flex-wrap: wrap; /* Para permitir que las tarjetas se envuelvan si no caben en una línea */
-    justify-content: center; /* Para alinear las tarjetas horizontalmente en el centro */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
 }
 
 .image-container img {
-    max-width: none; /* Permite que la imagen exceda el ancho máximo */
-    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
-    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
-    border-radius: 10px; /* Añade bordes redondeados a la imagen */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una suave sombra a la imagen */
-    transition: transform 0.3s ease; /* Agrega una transición suave */
+    max-width: none; 
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; /
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s ease; 
 }
 
 
 /* Estilos para las tarjetas */
 .card-inicio {
-    width: 300px; /* Ancho fijo para cada tarjeta */
-    margin: 10px; /* Margen entre las tarjetas */
+    width: 290px; 
+    margin: 10px; 
     text-align: center; 
-    border: 1px solid #ccc; /* Añadir borde a las tarjetas */
-    border-radius: 5px; /* Añadir esquinas redondeadas */
-    overflow: hidden; /* Evitar que las imágenes se desborden */
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para las imágenes dentro de las tarjetas */
 .card-inicio img {
-    width: 75%; /* Hace que las imágenes ocupen el ancho completo de la tarjeta */
+    width: 75%; 
     height: auto;
 }
 
 
 card-content {
-    text-align: center; /* Centra el contenido horizontalmente */
+    text-align: center; 
 }
 
 
@@ -141,31 +113,33 @@ card-content {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
-    margin: 10px; /* Espacio entre las tarjetas */
+    margin: 20px; 
 }
 
 .card {
     width: 300px;
     margin: 10px;
     text-align: center;
-    border: 1px solid #ccc; /* Añadir borde a las tarjetas */
-    border-radius: 5px; /* Añadir esquinas redondeadas */
-    overflow: hidden; /* Evitar que las imágenes se desborden */
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-    width: 75%; /* Hace que las imágenes ocupen el ancho completo de la tarjeta */
+    width: 75%; 
     height: auto;
+    margin: 30px;
 }
     
 
 .card-content {
     padding: 10px;
-     /* Añadir un relleno interior */
+    
 }
 
 .card-content h2 {
-    font-size: 1.2rem; /* Tamaño de fuente para el título */
+    font-size: 1.1rem; 
     margin: 0; 
     text-align: center;
 }
@@ -173,57 +147,57 @@ card-content {
 
 
 .card-content p {
-    font-size: 1rem; /* Tamaño de fuente para el precio */
+    font-size: 1rem; 
     margin: 0;
-    text-align: center; /* Eliminar el margen superior e inferior */
+    text-align: center;
 }
 
 /*dermocosmética*/ 
 
 .imagedermo-container img {
-    width: 100vw; /* Ancho de la imagen al 100% del ancho de la ventana gráfica */
-    height: auto; /* Altura proporcional para mantener la relación de aspecto original */
-    border-radius: 10px; /* Agrega bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    width: 100vw; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 /* cuidado de la piel */
 section {
-    display: flex; /* Utiliza flexbox para alinear los artículos en línea */
-    justify-content: space-around; /* Distribuye los artículos equitativamente */
-    margin-top: 20px; /* Espacio superior */
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: 20px; 
 }
 
 article {
-    width: 30%; /* Ancho de cada artículo */
-    padding: 20px; /* Relleno interno */
-    background-color:#F6F5F8 ; /* Color de fondo */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
-    display: flex; /* Utiliza flexbox para el diseño interno */
-    flex-direction: column; /* Coloca los elementos en columna */
+    width: 30%; 
+    padding: 20px; 
+    background-color:#F6F5F8 ; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    flex-direction: column; 
     align-items: center;
     margin-bottom: 20px;
 }
 
 article img {
-    max-width: 100%; /* Ancho máximo del 100% del contenedor */
-    height: auto; /* Altura automática para mantener la proporción */
-    border-radius: 8px; /* Bordes redondeados para la imagen */
-    margin-bottom: 10px; /* Espacio inferior */
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 10px; 
 }
 
 article h2 {
-    font-weight: bold; /* Hace el título en negrita */
-    margin-bottom: 10px; /* Espacio inferior */
+    font-weight: bold; 
+    margin-bottom: 10px; 
 }
 
 article p {
-    margin-bottom: 10px; /* Espacio inferior */
+    margin-bottom: 10px; 
 }
 
 article p:last-child {
-    margin-bottom: 0; /* Elimina el espacio inferior para el último párrafo */
+    margin-bottom: 0; 
 }
 
 
@@ -281,15 +255,15 @@ article p:last-child {
 
 
 footer {
-    display: flex; /* Utiliza flexbox */
-    justify-content: space-around; /* Alinea los elementos con espacio alrededor */
-    background-color: #f0f0f0; /* Color de fondo del footer */
-    padding: 20px 0; /* Añade relleno en la parte superior e inferior del footer */
+    display: flex; 
+    justify-content: space-around; 
+    background-color: #f0f0f0; 
+    padding: 20px 0; 
 }
 
 footer div {
-    flex: 1; /* Distribuye el espacio disponible entre los elementos */
-    text-align: center; /* Centra el contenido horizontalmente */
+    flex: 1; 
+    text-align: center; 
 }
 
 
@@ -298,39 +272,43 @@ footer div {
 
 /*media queries*/
 
+/*tablet*/
+
 @media screen and (max-width: 768px){
     header{
         display: flex;
         flex-direction: column;
     }
-    header img{
-        width: 400%;
+    header img {
+        width: 160%;
     }
-    
+    main-inicio {
+        justify-content: space-between;
+    }
+    .card-inicio {
+        width: 163px
+    }
+
     .horizontal-menu li a {
         font-size: medium;
     }
+}
 
 
-
+/*mobile*/
 
 
 
 @media screen and (max-width: 320px) {
-    header{
-        flex-direction: column;
-    }
     .header-texto{
-    font-size: 16px;
+    font-size: xx-small;
+    padding: 1px;
     }
 
     .horizontal-menu{
-        justify-content: flex-end;
-    }
-    .horizontal-menu li a {
-        font-size: 8px;
-        font-weight: 700;
-        
+        font-size: xx-small;
+    }   
+
 }
 
 
