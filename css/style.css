@@ -117,7 +117,7 @@ card-content {
 }
 
 .card {
-    width: 300px;
+    width: 240px;
     margin: 10px;
     text-align: center;
     border: 1px solid #ccc; 
@@ -165,7 +165,7 @@ card-content {
 section {
     display: flex; 
     justify-content: space-around; 
-    margin-top: 20px; 
+    margin-top: 10px; 
 }
 
 article {
@@ -202,6 +202,12 @@ article p:last-child {
 
 /*dermocosmetica*/
 
+.section-flex{
+    display:flex;
+    
+}
+
+
 .contenedor-article {
     margin-top: 10px;
     width: 30%;
@@ -231,7 +237,53 @@ article p:last-child {
     font-size: 54px;
     line-height: 44px;
 }
+.section-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+/* Estilo para el contenedor principal */
+.main {
+    display: flex;
+}
+
+/* Estilo para el artículo */
+.contenedor-article {
+    flex: 1; /* El artículo ocupará todo el espacio restante */
+    margin-right: 0px; /* Margen derecho para separarlo de las cards */
+}
+
+.card-dermo {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+.card-dermo img {
+    width: 75%; 
+    height: auto;
+    margin:30px;
+}
+
+h1{
+    font-size: 1.6875rem;
+}
+
+.iframe-contenedor {
+    display: flex;
+    gap: 140px;
+
+}
+iframe {
+    width: 623px;
+    border: 0;
+}
 
 
 
@@ -266,7 +318,14 @@ article p:last-child {
     margin-bottom: 10px;
 }
 
+.section-container{
+    display: flex;
+    flex-direction: column;
+}
 
+.section-container img{
+    width: 1204px;
+}
 
 footer {
     display: flex; 
@@ -289,68 +348,88 @@ footer div {
 /*tablet*/
 
 @media screen and (max-width: 768px){
-    header{
+    header {
         flex-direction: column;
     }
     header img {
-        width: 160%;
+        width: :112%;
     }
-    main-inicio {
-        justify-content: space-between;
+    .form-container{
+        flex-direction: column;
     }
-    .card-inicio {
-        width: 163px
+    .account-cart-container{
+        margin: 0px;
+        padding: 15px,
     }
-
-    .horizontal-menu li a {
-        font-size: medium;
+    .account-cart-container p {
+        margin: 10px;
     }
+    .horizontal-menu a {
+        font-size: 20px;
+    }
+        
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .card {
+        width: 240px;
+        margin: 43px;
+        margin-top: 5px
 }
-
 
 /*mobile*/
 
 
 
 @media screen and (max-width: 320px) {
-    header{
-        flex-direction: column;
-    }
-    header img {
-        width: 93%;
-    }
+            .header-texto{
+                font-size: .8125rem;
+            }
+            .form-container img{
+                width: 260px;
+            }
+            
+            .account-cart-container{
+                padding: 0px;
+            }
 
-    .header-texto{
-        font-size: .75rem;
-    }
-    
-    .form-container {
-        display: flex;
-        margin-left: auto;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .horizontal-menu li a {
-        font-size: 6px;
-        font-weight: bold;
-    }
-    .image-container img {
-        width: 83%;
-    }
-    .horizontal-menu {
-        width: 372px;
-    }    
+
+            .horizontal-menu a{
+                font-size: 6px;
+                font-weight: 700;
+            }    
+            .card-inicio{
+                width: 126px;
+            }
+            .card-content h2{
+                font-size: 12px;
+            }
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .card {
+                width: 136px;
+                margin: 0px;
+            }
+            .card img {
+                width: 62%;
+                margin: auto;
+            }
+            .card-content {
+                padding: 0px;
+            }
         
-    .account-cart-container {
-            display: block;
-            align-items: center;
-            margin-left: -124px;
-            padding: 40px;
-}
 
-footer {
-    display: block;
-}
+            footer h3{
+            font-size: 10px;
+            }
+            footer p{
+                font-size: 8px;
+            }
+            footer img{
+            width: 50px;
+            } 
 }
 
 
