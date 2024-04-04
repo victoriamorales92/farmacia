@@ -1,0 +1,41 @@
+/*inicio*/
+
+
+
+main {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.image-container img {
+    max-width: none; 
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s ease; 
+}
+
+
+/* Estilos para las tarjetas */
+.card-inicio {
+    width: 290px; 
+    margin: 10px; 
+    text-align: center; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.card-inicio img {
+    width: 75%; 
+    height: auto;
+}
+
+
+card-content {
+    text-align: center; 
+}

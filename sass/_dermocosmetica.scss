@@ -1,0 +1,91 @@
+/*dermocosmética*/ 
+
+.imagedermo-container img {
+    width: 100vw; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.section-flex{
+    display:flex;
+    
+}
+
+
+.contenedor-article {
+    margin-top: 10px;
+    width: 30%;
+    padding: 20px;
+    background-color: #F6F5F8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.iframe-contenedor{
+    margin-top: 10px;
+}
+
+.parrafo-uno {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 44px;
+    color: #1d1d1d;
+
+
+}
+
+.parrafo-dos {
+    font-weight: 100;
+    font-size: 54px;
+    line-height: 44px;
+}
+.section-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Estilo para el contenedor principal */
+.main {
+    display: flex;
+}
+
+/* Estilo para el artículo */
+.contenedor-article {
+    flex: 1; /* El artículo ocupará todo el espacio restante */
+    margin-right: 0px; /* Margen derecho para separarlo de las cards */
+}
+
+.card-dermo {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+.card-dermo img {
+    width: 75%; 
+    height: auto;
+    margin:30px;
+}
+
+h1{
+    font-size: 1.6875rem;
+}
+
+.iframe-contenedor {
+    display: flex;
+    gap: 140px;
+
+}
+iframe {
+    width: 623px;
+    border: 0;
+}

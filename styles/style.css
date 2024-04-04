@@ -1,0 +1,402 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header-texto {
+  background-color: #00A339;
+  color: white;
+  padding: 4px 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.form-container form {
+  margin-bottom: inherit;
+}
+
+.account-cart-container {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  padding: 40px;
+}
+
+.account-cart-container p {
+  margin-left: 100px;
+}
+
+.horizontal-menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  background-color: #E1F0DA;
+  justify-content: space-evenly;
+}
+
+.horizontal-menu li {
+  margin-right: 20px;
+}
+
+.horizontal-menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  font-size: x-large;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding: 20px 0;
+}
+
+footer div {
+  flex: 1;
+  text-align: center;
+}
+
+/*inicio*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.image-container img {
+  max-width: none;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Estilos para las tarjetas */
+.card-inicio {
+  width: 290px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.card-inicio img {
+  width: 75%;
+  height: auto;
+}
+
+card-content {
+  text-align: center;
+}
+
+/*fragancias*/
+.grid-contenedor {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  margin: 20px;
+}
+
+.card {
+  width: 240px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 75%;
+  height: auto;
+  margin: 30px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.card-content p {
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+/*dermocosmética*/
+.imagedermo-container img {
+  width: 100vw;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-flex {
+  display: flex;
+}
+
+.contenedor-article {
+  margin-top: 10px;
+  width: 30%;
+  padding: 20px;
+  background-color: #F6F5F8;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.iframe-contenedor {
+  margin-top: 10px;
+}
+
+.parrafo-uno {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 44px;
+  color: #1d1d1d;
+}
+
+.parrafo-dos {
+  font-weight: 100;
+  font-size: 54px;
+  line-height: 44px;
+}
+
+.section-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Estilo para el contenedor principal */
+.main {
+  display: flex;
+}
+
+/* Estilo para el artículo */
+.contenedor-article {
+  flex: 1; /* El artículo ocupará todo el espacio restante */
+  margin-right: 0px; /* Margen derecho para separarlo de las cards */
+}
+
+.card-dermo {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-dermo img {
+  width: 75%;
+  height: auto;
+  margin: 30px;
+}
+
+h1 {
+  font-size: 1.6875rem;
+}
+
+.iframe-contenedor {
+  display: flex;
+  gap: 140px;
+}
+
+iframe {
+  width: 623px;
+  border: 0;
+}
+
+/* cuidado de la piel */
+section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+article {
+  width: 30%;
+  padding: 20px;
+  background-color: #F6F5F8;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+article h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+article p {
+  margin-bottom: 10px;
+}
+
+article p:last-child {
+  margin-bottom: 0;
+}
+
+/*suplemenetos*/
+.contenedor-main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.contenedor-main article {
+  width: 30%;
+  padding: 20px;
+  background-color: #F6F5F8;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-main article img {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.contenedor-main article h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-container img {
+  width: 1204px;
+}
+
+/*media queries*/
+/*tablet*/
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header img {
+    width: 112%;
+  }
+  .form-container {
+    flex-direction: column;
+  }
+  .account-cart-container {
+    margin: 0px;
+    padding: 15px;
+  }
+  .account-cart-container p {
+    margin: 10px;
+  }
+  .horizontal-menu a {
+    font-size: 20px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .card {
+    width: 240px;
+    margin: 43px;
+    margin-top: 5px;
+  }
+}
+/*mobile*/
+@media screen and (max-width: 320px) {
+  .header-texto {
+    font-size: 0.8125rem;
+  }
+  .form-container img {
+    width: 260px;
+  }
+  .account-cart-container {
+    padding: 0px;
+  }
+  .horizontal-menu a {
+    font-size: 6px;
+    font-weight: 700;
+  }
+  .card-inicio {
+    width: 126px;
+  }
+  .card-content h2 {
+    font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 136px;
+    margin: 0px;
+  }
+  .card img {
+    width: 62%;
+    margin: auto;
+  }
+  .card-content {
+    padding: 0px;
+  }
+  footer h3 {
+    font-size: 10px;
+  }
+  footer p {
+    font-size: 8px;
+  }
+  footer img {
+    width: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

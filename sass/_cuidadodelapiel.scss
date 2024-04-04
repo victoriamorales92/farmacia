@@ -1,0 +1,38 @@
+/* cuidado de la piel */
+section {
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: 10px; 
+}
+
+article {
+    width: 30%; 
+    padding: 20px; 
+    background-color:#F6F5F8 ; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+article img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 10px; 
+}
+
+article h2 {
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+
+article p {
+    margin-bottom: 10px; 
+}
+
+article p:last-child {
+    margin-bottom: 0; 
+}
