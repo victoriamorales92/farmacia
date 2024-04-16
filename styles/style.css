@@ -317,27 +317,31 @@ article:hover {
 
 /*media queries*/
 @media screen and (max-width: 982px) {
-  /* Aquí agregas tus estilos para pantallas con ancho máximo de 982px */
   main {
     justify-content: center;
-    /* Centra los elementos en pantallas más pequeñas */
   }
   .image-container img {
     max-width: 80%;
-    /* Reduce el tamaño de la imagen en pantallas más pequeñas */
   }
-  .card-inicio {
+  .image-container .card-inicio {
     width: 80%;
-    /* Ajusta el ancho de la tarjeta en pantallas más pequeñas */
   }
+  /*tablet*/
+  /*mobile*/
 }
-/*tablet*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 982px) and (max-width: 768px) {
   header {
     flex-direction: column;
   }
-  header img {
-    width: 112%;
+  .nav-bar {
+    padding: 10px;
+  }
+  .nav-bar li a {
+    font-size: medium;
+    font-weight: 500;
+  }
+  .div image-container {
+    widht: 100%;
   }
   .form-container {
     flex-direction: column;
@@ -362,20 +366,22 @@ article:hover {
     margin-top: 5px;
   }
 }
-/*mobile*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 982px) and (max-width: 320px) {
   .header-texto {
     font-size: 0.8125rem;
   }
   .form-container img {
-    width: 260px;
+    width: 100%;
   }
   .account-cart-container {
     padding: 0px;
   }
-  .horizontal-menu a {
-    font-size: 6px;
-    font-weight: 700;
+  .nav-bar {
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
   }
   .card-inicio {
     width: 126px;
@@ -405,6 +411,15 @@ article:hover {
   }
   footer img {
     width: 50px;
+  }
+}
+@media screen and (max-width: 982px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+  article {
+    width: 90%;
   }
 }
 
