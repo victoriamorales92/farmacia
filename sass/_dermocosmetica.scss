@@ -30,6 +30,7 @@
 
 .iframe-contenedor{
     margin-top: 10px;
+    gap: 30px;
 }
 
 .parrafo-uno {
@@ -85,16 +86,13 @@ h1{
     font-size: 1.6875rem;
 }
 
-.iframe-contenedor {
-    display: flex;
-    gap: 140px;
-}
 
 iframe {
     width: 623px;
     border: 0;
 }
 .iframe-contenedor{
+    display: flex;
     margin-top: 10px;
 }
 }

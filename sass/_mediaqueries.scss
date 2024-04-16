@@ -1,27 +1,4 @@
 /*media queries*/
-@media screen and (max-width: 982px) {
-
-    
-    main {
-        justify-content: center;
-    }
-
-    .image-container {
-        img {
-            max-width: 80%;
-    }
-
-    .card-inicio {
-        width: 80%;
-        
-    }
-}
-
-
-
-
-
-
 
 /*tablet*/
 
@@ -39,7 +16,7 @@
         }
     
 
-    .div image-container {
+    .div image-container{
     width: 100%;
 }
     .form-container {
@@ -94,7 +71,14 @@
         flex-direction: column;
         align-items: center;
     }
-
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    article {
+        width: 90%;
+    }
 
     .card-inicio {
         width: 126px;
@@ -136,12 +120,4 @@
     }
 }
 
-section {
-    flex-direction: column;
-    align-items: center;
-}
 
-article {
-    width: 90%;
-}
-}
