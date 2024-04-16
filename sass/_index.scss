@@ -20,19 +20,18 @@ main {
 
 /* Estilos para las tarjetas */
 .card-inicio {
-    width: 290px; 
-    margin: 10px; 
-    text-align: center; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    overflow: hidden; 
+    width: 290px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-/* Estilos para las imágenes dentro de las tarjetas */
-.card-inicio img {
-    width: 75%; 
-    height: auto;
+    img {
+        width: 75%;
+        height: auto;
+    }
 }
 
 

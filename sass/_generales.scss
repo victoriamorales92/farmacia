@@ -37,17 +37,16 @@ body {
     font-weight: normal;
 }
 
-
-
 .form-container {
     display: flex;
     align-items: center;
     margin-left: auto;
+
+    form {
+        margin-bottom: inherit;
+    }
 }
 
-.form-container form {
-    margin-bottom: inherit;
-}
 
 
 .account-cart-container {
@@ -55,13 +54,14 @@ body {
     align-items: flex-end;
     margin-left: auto;
     padding: 40px;
+
+    p {
+        margin-left: 100px;
+    }
 }
 
 
 
-.account-cart-container p {
-    margin-left: 100px;
-}
 .nav-bar {
     display: flex;
     list-style-type: none; 
@@ -90,9 +90,9 @@ footer {
     justify-content: space-around;
     background-color: #f0f0f0;
     padding: 20px 0;
-}
 
-footer div {
-    flex: 1;
-    text-align: center;
+    div {
+        flex: 1;
+        text-align: center;
+    }
 }

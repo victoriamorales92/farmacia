@@ -26,7 +26,6 @@ body {
   align-items: center;
   margin-left: auto;
 }
-
 .form-container form {
   margin-bottom: inherit;
 }
@@ -37,7 +36,6 @@ body {
   margin-left: auto;
   padding: 40px;
 }
-
 .account-cart-container p {
   margin-left: 100px;
 }
@@ -68,7 +66,6 @@ footer {
   background-color: #f0f0f0;
   padding: 20px 0;
 }
-
 footer div {
   flex: 1;
   text-align: center;
@@ -100,8 +97,6 @@ main {
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* Estilos para las imágenes dentro de las tarjetas */
 .card-inicio img {
   width: 75%;
   height: auto;
@@ -218,7 +213,6 @@ card-content {
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .card-dermo img {
   width: 75%;
   height: auto;
@@ -322,6 +316,21 @@ article:hover {
 }
 
 /*media queries*/
+@media screen and (max-width: 982px) {
+  /* Aquí agregas tus estilos para pantallas con ancho máximo de 982px */
+  main {
+    justify-content: center;
+    /* Centra los elementos en pantallas más pequeñas */
+  }
+  .image-container img {
+    max-width: 80%;
+    /* Reduce el tamaño de la imagen en pantallas más pequeñas */
+  }
+  .card-inicio {
+    width: 80%;
+    /* Ajusta el ancho de la tarjeta en pantallas más pequeñas */
+  }
+}
 /*tablet*/
 @media screen and (max-width: 768px) {
   header {

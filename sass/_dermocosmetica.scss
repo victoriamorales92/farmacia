@@ -59,8 +59,7 @@
     display: flex;
     justify-content: space-between;
 }
-
-.card-dermo{
+.card-dermo {
     width: 290px; 
     margin: 10px; 
     text-align: center; 
@@ -68,12 +67,15 @@
     border-radius: 5px; 
     overflow: hidden; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    img {
+        width: 75%; 
+        height: auto;
+        margin: 30px;
+    }
 }
-.card-dermo img {
-    width: 75%; 
-    height: auto;
-    margin:30px;
-}
+
+
 .content-card{
     display: flex;
     justify-content: space-around;
