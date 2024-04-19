@@ -41,13 +41,26 @@
         grid-template-rows: repeat(4, 1fr);
     }
 
+
+
     .card {
         width: 240px;
         margin: 43px;
         margin-top: 5px
     }
-}
 
+    .card-dermo {
+        width: 166px;
+    }
+
+    .iframe-contenedor {
+    display: flex;
+    flex-direction: column;
+    }
+    iframe {
+    width: 700;
+}
+}
 /*mobile*/
 
 
@@ -106,6 +119,12 @@
         padding: 0px;
     }
 
+    .contenedor-main article {
+        width: 90%;
+    }
+    .contenedor-main article img {
+        height: 210px;
+    }
 
     footer h3 {
         font-size: 10px;
