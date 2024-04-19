@@ -71,6 +71,35 @@ footer div {
   text-align: center;
 }
 
+h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.bi {
+  font-size: 24px;
+  margin: 0 5px;
+  color: #666;
+}
+.bi:hover {
+  color: #007bff;
+}
+
+.bi-facebook:hover {
+  color: #3b5998;
+}
+
+.bi-instagram:hover {
+  color: #c13584;
+}
+
 /*inicio*/
 main {
   display: flex;
