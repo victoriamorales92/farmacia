@@ -11,9 +11,11 @@
 
 
 .contenedor-article {
-    width: 30%;
-    padding: 20px;
-    background-color: #f6f6f3;
+    display: flex;
+    margin-top: 30px;
+    width: 45%;
+    padding: 25px;
+    background-color: #fefefe;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -21,65 +23,78 @@
 .section-flex{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 20px;
+    padding: 40px;
     box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 
-
-
-.iframe-contenedor{
-    margin-top: 10px;
-    gap: 30px;
-}
-
 .parrafo-uno {
     font-weight: 700;
-    font-size: 54px;
+    font-size: 50px;
     line-height: 44px;
-    color: #1d1d1d;
+    color: #000000;
 
 
 }
 
 .parrafo-dos {
     font-weight: 100;
-    font-size: 54px;
+    font-size: 40px;
     line-height: 44px;
+    color: #000000;
 }
 
 
 
 /* Estilo para el artículo */
 .contenedor-article {
-    flex: 1; /* El artículo ocupará todo el espacio restante */
-    margin-right: 0px; /* Margen derecho para separarlo de las cards */
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 40px;
 }
 
-.content-card{
+.content-card {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
 .card-dermo {
-    width: 290px; 
+    width: 240px; 
     margin: 10px; 
     text-align: center; 
     border: 1px solid #ccc; 
     border-radius: 5px; 
     overflow: hidden; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+
 
     img {
         width: 75%; 
         height: auto;
         margin: 30px;
     }
+
+    h2 {
+        font-size: 1.1rem; 
+        margin: 0; 
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.25rem; 
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+
+    &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 }
-
-
-.content-card{
-    display: flex;
-    justify-content: space-around;
 
 
 h1{
@@ -93,6 +108,8 @@ iframe {
 }
 .iframe-contenedor{
     display: flex;
+    justify-content: space-around;
     margin-top: 10px;
+    gap: 30px;
 }
-}
+

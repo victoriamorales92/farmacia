@@ -25,17 +25,31 @@ $colores:(
 
 body {
     font-family: "Poppins", sans-serif;
+
+
+
+.account-cart-container {
+    .bi {
+        color: rgb(0, 0, 0); /* Color predeterminado */
+        transition: color 0.3s ease; /* Transición suave para el cambio de color */
+    }
+
+    .bi:hover {
+        color: green; /* Color al pasar el ratón por encima */
+    }
 }
 
 
 .header-texto {
     background-color: #00A339;
     color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 4px 10px;
     text-align: center;
     font-size: 25px;
     font-weight: normal;
-}
+    margin-top: 0;
+} 
 
 .form-container {
     display: flex;
@@ -64,6 +78,7 @@ body {
 
 .nav-bar {
     display: flex;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     list-style-type: none; 
     padding: 0;
     background-color: #E1F0DA;
@@ -128,4 +143,4 @@ footer {
             color: #c13584;
         }
     
-
+    }

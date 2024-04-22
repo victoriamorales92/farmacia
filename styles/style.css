@@ -11,109 +11,104 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
-.header-texto {
+body .account-cart-container .bi {
+  color: rgb(0, 0, 0); /* Color predeterminado */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+body .account-cart-container .bi:hover {
+  color: green; /* Color al pasar el ratón por encima */
+}
+body .header-texto {
   background-color: #00A339;
   color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 4px 10px;
   text-align: center;
   font-size: 25px;
   font-weight: normal;
+  margin-top: 0;
 }
-
-.form-container {
+body .form-container {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-.form-container form {
+body .form-container form {
   margin-bottom: inherit;
 }
-
-.account-cart-container {
+body .account-cart-container {
   display: flex;
   align-items: flex-end;
   margin-left: auto;
   padding: 40px;
 }
-.account-cart-container p {
+body .account-cart-container p {
   margin-left: 100px;
 }
-
-.nav-bar {
+body .nav-bar {
   display: flex;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   list-style-type: none;
   padding: 0;
   background-color: #E1F0DA;
   justify-content: space-evenly;
 }
-.nav-bar li {
+body .nav-bar li {
   margin-right: 20px;
 }
-.nav-bar li a {
+body .nav-bar li a {
   text-decoration: none;
   color: black;
   font-weight: normal;
   font-size: x-large;
 }
-.nav-bar li a:hover {
+body .nav-bar li a:hover {
   color: #00A339;
 }
-
-footer {
+body footer {
   display: flex;
   justify-content: space-around;
   background-color: #f0f0f0;
   padding: 20px 0;
 }
-footer div {
+body footer div {
   flex: 1;
   text-align: center;
 }
-
-h3 {
+body h3 {
   color: #333;
   font-size: 18px;
   margin-bottom: 15px;
 }
-
-p {
+body p {
   color: #666;
   font-size: 16px;
   margin: 5px 0;
 }
-
-.bi {
+body .bi {
   font-size: 24px;
   margin: 0 5px;
   color: #666;
 }
-.bi:hover {
+body .bi:hover {
   color: #007bff;
 }
-
-.bi-facebook:hover {
+body .bi-facebook:hover {
   color: #3b5998;
 }
-
-.bi-instagram:hover {
+body .bi-instagram:hover {
   color: #c13584;
 }
 
 /*inicio*/
-main {
+.image-container img {
+  width: 100%;
+}
+
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-.image-container img {
-  max-width: none;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
 
 /* Estilos para las tarjetas */
@@ -125,20 +120,26 @@ main {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 .card-inicio img {
   width: 75%;
   height: auto;
 }
-
-card-content {
+.card-inicio h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
   text-align: center;
 }
-
-/*fragancias*/
-.grid-contenedor {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+.card-inicio p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+.card-inicio:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .grid {
@@ -146,40 +147,41 @@ card-content {
   justify-items: center;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 30px;
+  gap: 20px;
   margin: 20px;
 }
 
-.card {
+.card-fragancias {
   width: 240px;
-  margin: 10px;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
-
-.card img {
+.card-fragancias img {
   width: 75%;
   height: auto;
   margin: 30px;
 }
-
-.card-content {
+.card-fragancias .card-content {
   padding: 10px;
 }
-
-.card-content h2 {
+.card-fragancias .card-content h2 {
   font-size: 1.1rem;
+  font-weight: 500;
   margin: 0;
   text-align: center;
 }
-
-.card-content p {
-  font-size: 1rem;
+.card-fragancias .card-content p {
+  font-size: 1.25rem;
+  font-weight: 700;
   margin: 0;
   text-align: center;
+}
+.card-fragancias:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 /*dermocosmética*/
@@ -191,9 +193,11 @@ card-content {
 }
 
 .contenedor-article {
-  width: 30%;
-  padding: 20px;
-  background-color: #f6f6f3;
+  display: flex;
+  margin-top: 30px;
+  width: 45%;
+  padding: 25px;
+  background-color: #fefefe;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
@@ -202,68 +206,83 @@ card-content {
 .section-flex {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 20px;
+  padding: 40px;
   box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
-}
-
-.iframe-contenedor {
-  margin-top: 10px;
-  gap: 30px;
 }
 
 .parrafo-uno {
   font-weight: 700;
-  font-size: 54px;
+  font-size: 50px;
   line-height: 44px;
-  color: #1d1d1d;
+  color: #000000;
 }
 
 .parrafo-dos {
   font-weight: 100;
-  font-size: 54px;
+  font-size: 40px;
   line-height: 44px;
+  color: #000000;
 }
 
 /* Estilo para el artículo */
 .contenedor-article {
-  flex: 1; /* El artículo ocupará todo el espacio restante */
-  margin-right: 0px; /* Margen derecho para separarlo de las cards */
-}
-
-.content-card {
+  width: 97%;
   display: flex;
-  justify-content: space-between;
-}
-
-.card-dermo {
-  width: 290px;
-  margin: 10px;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.card-dermo img {
-  width: 75%;
-  height: auto;
-  margin: 30px;
+  flex-direction: column;
+  margin: 20px;
+  padding: 40px;
 }
 
 .content-card {
   display: flex;
   justify-content: space-around;
 }
-.content-card h1 {
+
+.card-dermo {
+  width: 240px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.card-dermo img {
+  width: 75%;
+  height: auto;
+  margin: 30px;
+}
+.card-dermo h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  text-align: center;
+}
+.card-dermo p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+.card-dermo:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
   font-size: 1.6875rem;
 }
-.content-card iframe {
+
+iframe {
   width: 623px;
   border: 0;
 }
-.content-card .iframe-contenedor {
+
+.iframe-contenedor {
   display: flex;
+  justify-content: space-around;
   margin-top: 10px;
+  gap: 30px;
 }
 
 /* cuidado de la piel */
@@ -314,12 +333,13 @@ article:hover {
   transition: transform 0.3s ease;
 }
 
-.contenedor-main {
+.div-flex {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 30px;
 }
-.contenedor-main article {
+
+article {
   width: 30%;
   padding: 20px;
   background-color: #F6F5F8;
@@ -329,23 +349,24 @@ article:hover {
   flex-direction: column;
   align-items: center;
 }
-.contenedor-main article img {
+article img {
   width: 90%;
   height: 320px;
   border-radius: 8px;
   margin-bottom: 10px;
 }
-.contenedor-main article h2 {
+article h2 {
   font-weight: bold;
   margin-bottom: 10px;
 }
-.contenedor-main article:hover {
-  background-color: #EAE9EC;
+article:hover {
+  background-color: #eaece9;
 }
 
 .section-container {
   display: flex;
-  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .div-flex img {
@@ -434,6 +455,7 @@ article:hover {
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
   .card {
     width: 136px;
@@ -445,6 +467,9 @@ article:hover {
   }
   .card-content {
     padding: 0px;
+  }
+  .card-content p {
+    font-size: 0.8125rem;
   }
   .contenedor-main article {
     width: 90%;
