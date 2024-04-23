@@ -163,7 +163,8 @@ p {
 }
 
 .card-fragancias {
-  width: 240px;
+  width: 290px;
+  margin: 10px;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -174,24 +175,20 @@ p {
 .card-fragancias img {
   width: 75%;
   height: auto;
-  margin: 30px;
 }
-.card-fragancias .card-content {
-  padding: 10px;
-}
-.card-fragancias .card-content h2 {
+.card-fragancias h2 {
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0;
   text-align: center;
 }
-.card-fragancias .card-content p {
+.card-fragancias p {
   font-size: 1.25rem;
   font-weight: 700;
   margin: 0;
   text-align: center;
 }
-.card-fragancias .card-content:hover {
+.card-fragancias:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
