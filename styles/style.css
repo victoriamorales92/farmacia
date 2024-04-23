@@ -11,14 +11,16 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-body .account-cart-container .bi {
+
+.account-cart-container .bi {
   color: rgb(0, 0, 0); /* Color predeterminado */
   transition: color 0.3s ease; /* Transición suave para el cambio de color */
 }
-body .account-cart-container .bi:hover {
+.account-cart-container .bi:hover {
   color: green; /* Color al pasar el ratón por encima */
 }
-body .header-texto {
+
+.header-texto {
   background-color: #00A339;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -28,24 +30,27 @@ body .header-texto {
   font-weight: normal;
   margin-top: 0;
 }
-body .form-container {
+
+.form-container {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-body .form-container form {
+.form-container form {
   margin-bottom: inherit;
 }
-body .account-cart-container {
+
+.account-cart-container {
   display: flex;
   align-items: flex-end;
   margin-left: auto;
   padding: 40px;
 }
-body .account-cart-container p {
+.account-cart-container p {
   margin-left: 100px;
 }
-body .nav-bar {
+
+.nav-bar {
   display: flex;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   list-style-type: none;
@@ -53,50 +58,56 @@ body .nav-bar {
   background-color: #E1F0DA;
   justify-content: space-evenly;
 }
-body .nav-bar li {
+.nav-bar li {
   margin-right: 20px;
 }
-body .nav-bar li a {
+.nav-bar li a {
   text-decoration: none;
   color: black;
   font-weight: normal;
   font-size: x-large;
 }
-body .nav-bar li a:hover {
+.nav-bar li a:hover {
   color: #00A339;
 }
-body footer {
+
+footer {
   display: flex;
   justify-content: space-around;
   background-color: #f0f0f0;
   padding: 20px 0;
 }
-body footer div {
+footer div {
   flex: 1;
   text-align: center;
 }
-body h3 {
+
+h3 {
   color: #333;
   font-size: 18px;
   margin-bottom: 15px;
 }
-body p {
+
+p {
   color: #666;
   font-size: 16px;
   margin: 5px 0;
 }
-body .bi {
+
+.bi {
   font-size: 24px;
   margin: 0 5px;
   color: #666;
 }
-body .bi:hover {
+.bi:hover {
   color: #007bff;
 }
-body .bi-facebook:hover {
+
+.bi-facebook:hover {
   color: #3b5998;
 }
-body .bi-instagram:hover {
+
+.bi-instagram:hover {
   color: #c13584;
 }
 
@@ -305,15 +316,18 @@ article {
   align-items: center;
   margin-bottom: 20px;
 }
-article img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
 article h2 {
   font-weight: bold;
   margin-bottom: 10px;
+}
+article .div-flex {
+  display: flex;
+}
+article .div-flex img {
+  width: 50%;
+  height: auto;
+  border-radius: 0px;
+  box-shadow: 0;
 }
 article p {
   margin-bottom: 10px;
@@ -327,11 +341,23 @@ article:hover {
 
 /*suplemenetos*/
 .div-flex {
+  margin-top: 30px;
+}
+.div-flex img {
+  max-width: none;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.flex-div {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
 }
-.div-flex img {
+.flex-div img {
   max-width: none;
   width: 100%;
   height: auto;
@@ -380,7 +406,7 @@ article:hover {
     padding: 10px;
   }
   .nav-bar li a {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 500;
   }
   .div image-container {
@@ -414,9 +440,21 @@ article:hover {
   .card-dermo {
     width: 166px;
   }
+  article img {
+    height: 180px;
+  }
+  .div-flex {
+    margin-top: 0px;
+  }
+  .div-flex img {
+    margin-top: -14px;
+  }
+  .section-container h2 {
+    margin: 24px;
+  }
   .iframe-contenedor {
-    display: flex;
     flex-direction: column;
+    margin: 60px;
   }
   iframe {
     width: 700;
@@ -476,8 +514,36 @@ article:hover {
   .contenedor-main article img {
     height: 210px;
   }
+  .parrafo-uno {
+    font-size: 36px;
+  }
+  .parrafo-dos {
+    font-size: 34px;
+  }
+  iframe {
+    width: 231px;
+  }
   footer h3 {
     font-size: 10px;
+  }
+  article img {
+    width: 110%;
+    height: 180px;
+  }
+  .div-flex img {
+    height: 112px;
+  }
+  .flex-div {
+    flex-direction: column;
+    margin: 40px;
+  }
+  article h2 {
+    font-size: 20px;
+  }
+  .section-container h2 {
+    margin: 12px;
+    margin-top: 0px;
+    font-size: 16px;
   }
   footer p {
     font-size: 8px;
