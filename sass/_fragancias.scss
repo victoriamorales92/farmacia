@@ -24,23 +24,23 @@
 
     .card-content {
         padding: 10px;
+    
+        h2 {
+            font-size: 1.1rem; 
+            font-weight: 500;
+            margin: 0; 
+            text-align: center;
+        }
+    
+        p {
+            font-size: 1.25rem; 
+            font-weight: 700;
+            margin: 0;
+            text-align: center;
+        }
+    
+        &:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
     }
-
-    .card-content h2 {
-        font-size: 1.1rem; 
-        font-weight: 500;
-        margin: 0; 
-        text-align: center;
-    }
-
-    .card-content p {
-        font-size: 1.25rem; 
-        font-weight: 700;
-        margin: 0;
-        text-align: center;
-    }
-
-    &:hover {
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    }
-}
+}    

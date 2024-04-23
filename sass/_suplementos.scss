@@ -1,21 +1,23 @@
 
 
 /*suplemenetos*/
-.div-flex img {
-    max-width: none; 
-    width: 100%; 
-    height: auto; 
-    border-radius: 10px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
-    transition: transform 0.3s ease; 
-}
-
-
 .div-flex {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+
+    img {
+        max-width: none; 
+        width: 100%; 
+        height: auto; 
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+        transition: transform 0.3s ease; 
+    }
 }
+
+
+
     article {
         width: 30%;
         padding: 20px;
@@ -43,12 +45,13 @@
         }
     }
 
+
+
+
 .section-container{
     display: flex;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.div-flex img{
-    width: 100%;
-}
+
