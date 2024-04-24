@@ -243,11 +243,6 @@ p {
   padding: 40px;
 }
 
-.content-card {
-  display: flex;
-  justify-content: space-around;
-}
-
 .card-dermo {
   width: 240px;
   margin: 10px;
@@ -265,14 +260,13 @@ p {
 }
 .card-dermo h2 {
   font-size: 1.1rem;
-  margin: 0;
+  margin: 10px;
   margin-bottom: 25px;
   text-align: center;
 }
 .card-dermo p {
   font-size: 1.25rem;
   font-weight: 700;
-  margin: 0;
   text-align: center;
 }
 .card-dermo:hover {
@@ -491,6 +485,9 @@ article:hover {
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
+  .card-fragancias {
+    width: 257px;
+  }
   .card {
     width: 136px;
     margin: 0px;
@@ -505,23 +502,23 @@ article:hover {
   .card-content p {
     font-size: 0.8125rem;
   }
-  .contenedor-main article {
-    width: 90%;
-  }
   .contenedor-main article img {
     height: 210px;
   }
+  .contenedor-article {
+    width: 87%;
+  }
   .parrafo-uno {
-    font-size: 36px;
+    font-size: 28px;
   }
   .parrafo-dos {
-    font-size: 34px;
+    font-size: 24px;
+  }
+  .card-dermo {
+    width: 200px;
   }
   iframe {
     width: 231px;
-  }
-  footer h3 {
-    font-size: 10px;
   }
   article img {
     width: 110%;
@@ -541,6 +538,9 @@ article:hover {
     margin: 12px;
     margin-top: 0px;
     font-size: 16px;
+  }
+  footer h3 {
+    font-size: 10px;
   }
   footer p {
     font-size: 8px;

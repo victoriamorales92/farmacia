@@ -57,10 +57,7 @@
     padding: 40px;
 }
 
-.content-card {
-    display: flex;
-    justify-content: space-around;
-}
+
 
 .card-dermo {
     width: 240px; 
@@ -81,7 +78,7 @@
 
     h2 {
         font-size: 1.1rem; 
-        margin: 0; 
+        margin: 10px; 
         margin-bottom: 25px;
         text-align: center;
     }
@@ -89,7 +86,6 @@
     p {
         font-size: 1.25rem; 
         font-weight: 700;
-        margin: 0;
         text-align: center;
     }
 
